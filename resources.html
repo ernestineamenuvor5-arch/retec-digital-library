@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Career Tracks - RETEC Digital Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .career-category {
+            scroll-margin-top: 100px;
+        }
+        .quick-nav {
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+        .resource-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid;
+        }
+        .download-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="./index.html" class="text-blue-600 font-bold text-xl">RETEC Digital Library</a>
+                <div class="space-x-6">
+                    <a href="./index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="./resources.html" class="text-blue-600 font-semibold">Career Tracks</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">All Career Tracks</h1>
+            <p class="text-xl">Explore 12 career paths with free downloadable resources for JHS students</p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="bg-white py-6 shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-2">
+                <a href="#medical" class="quick-nav" style="background: #fecaca; color: #dc2626;">Medical</a>
+                <a href="#engineering" class="quick-nav" style="background: #dbeafe; color: #2563eb;">Engineering</a>
+                <a href="#technology" class="quick-nav" style="background: #e9d5ff; color: #7c3aed;">Technology</a>
+                <a href="#business" class="quick-nav" style="background: #d1fae5; color: #059669;">Business</a>
+                <a href="#law" class="quick-nav" style="background: #f3f4f6; color: #374151;">Law</a>
+                <a href="#arts" class="quick-nav" style="background: #fce7f3; color: #db2777;">Arts & Media</a>
+                <a href="#protective" class="quick-nav" style="background: #fed7aa; color: #ea580c;">Protective</a>
+                <a href="#banking" class="quick-nav" style="background: #ccfbf1; color: #0d9488;">Banking</a>
+                <a href="#entrepreneurship" class="quick-nav" style="background: #fef9c3; color: #ca8a04;">Entrepreneurship</a>
+                <a href="#fashion" class="quick-nav" style="background: #e0e7ff; color: #4f46e5;">Fashion</a>
+                <a href="#education" class="quick-nav" style="background: #cffafe; color: #0891b2;">Education</a>
+                <a href="#agriculture" class="quick-nav" style="background: #ecfccb; color: #65a30d;">Agriculture</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Tracks Grid -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            
+            <!-- 1. Medical Professionals -->
+            <div id="medical" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                    <i class="fas fa-heartbeat text-2xl text-red-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Medical Professionals</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #ef4444;">
+                        <h3 class="font-bold text-lg mb-2">Introduction to Healthcare Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Explore nursing, doctoring, and medical fields. Learn about various healthcare professions and their requirements.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=MEDICAL_PDF_ID" 
+                           class="download-btn" style="background: #ef4444;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Engineering & Technical Works -->
+            <div id="engineering" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                    <i class="fas fa-cogs text-2xl text-blue-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Engineering & Technical Works</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #3b82f6;">
+                        <h3 class="font-bold text-lg mb-2">Engineering Basics for JHS</h3>
+                        <p class="text-gray-600 text-sm mb-4">Civil, mechanical, and electrical engineering. Discover how engineers solve real-world problems.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=ENGINEERING_PDF_ID" 
+                           class="download-btn" style="background: #3b82f6;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Technology & Innovation -->
+            <div id="technology" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                    <i class="fas fa-laptop-code text-2xl text-purple-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Technology & Innovation</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #8b5cf6;">
+                        <h3 class="font-bold text-lg mb-2">Introduction to Tech Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Programming, IT, and digital innovation. Explore the world of technology and software development.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=TECH_PDF_ID" 
+                           class="download-btn" style="background: #8b5cf6;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Business & Marketing -->
+            <div id="business" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+                    <i class="fas fa-chart-line text-2xl text-green-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Business & Marketing</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #10b981;">
+                        <h3 class="font-bold text-lg mb-2">Business Fundamentals</h3>
+                        <p class="text-gray-600 text-sm mb-4">Marketing, management, and entrepreneurship basics. Learn how businesses operate and grow.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=BUSINESS_PDF_ID" 
+                           class="download-btn" style="background: #10b981;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Law & Legal Careers -->
+            <div id="law" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-gray-50 rounded-lg border-l-4 border-gray-500">
+                    <i class="fas fa-gavel text-2xl text-gray-600 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Law & Legal Careers</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #6b7280;">
+                        <h3 class="font-bold text-lg mb-2">Introduction to Legal Professions</h3>
+                        <p class="text-gray-600 text-sm mb-4">Lawyers, judges, and legal careers. Understand how the legal system works and career paths.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=LAW_PDF_ID" 
+                           class="download-btn" style="background: #6b7280;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Art & Media -->
+            <div id="arts" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-pink-50 rounded-lg border-l-4 border-pink-500">
+                    <i class="fas fa-palette text-2xl text-pink-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Art & Media</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #ec4899;">
+                        <h3 class="font-bold text-lg mb-2">Creative Arts Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Design, media, and artistic professions. Explore careers in creative industries and media.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=ARTS_PDF_ID" 
+                           class="download-btn" style="background: #ec4899;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Protective Services -->
+            <div id="protective" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+                    <i class="fas fa-shield-alt text-2xl text-orange-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Protective Services</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #f97316;">
+                        <h3 class="font-bold text-lg mb-2">Safety and Protection Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Police, firefighting, and security services. Learn about careers that keep communities safe.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=PROTECTIVE_PDF_ID" 
+                           class="download-btn" style="background: #f97316;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8. Banking & Finance -->
+            <div id="banking" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-teal-50 rounded-lg border-l-4 border-teal-500">
+                    <i class="fas fa-university text-2xl text-teal-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Banking & Finance</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #14b8a6;">
+                        <h3 class="font-bold text-lg mb-2">Financial Careers Introduction</h3>
+                        <p class="text-gray-600 text-sm mb-4">Banking, accounting, and finance professions. Understand money management and financial systems.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=BANKING_PDF_ID" 
+                           class="download-btn" style="background: #14b8a6;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Entrepreneurship & Startup -->
+            <div id="entrepreneurship" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                    <i class="fas fa-lightbulb text-2xl text-yellow-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Entrepreneurship & Startup</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #eab308;">
+                        <h3 class="font-bold text-lg mb-2">Starting Your Own Business</h3>
+                        <p class="text-gray-600 text-sm mb-4">Entrepreneurship skills and startup basics. Learn how to turn ideas into successful businesses.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=ENTREPRENEURSHIP_PDF_ID" 
+                           class="download-btn" style="background: #eab308;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10. Fashion & Creative Arts -->
+            <div id="fashion" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                    <i class="fas fa-tshirt text-2xl text-indigo-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Fashion & Creative Arts</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #6366f1;">
+                        <h3 class="font-bold text-lg mb-2">Fashion Industry Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Design, merchandising, and creative arts. Explore the world of fashion and creative design.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=FASHION_PDF_ID" 
+                           class="download-btn" style="background: #6366f1;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. Education & Training -->
+            <div id="education" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+                    <i class="fas fa-chalkboard-teacher text-2xl text-cyan-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Education & Training</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #06b6d4;">
+                        <h3 class="font-bold text-lg mb-2">Teaching and Education Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Teachers, trainers, and educational professionals. Discover careers that shape future generations.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=EDUCATION_PDF_ID" 
+                           class="download-btn" style="background: #06b6d4;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. Agriculture & Food Technology -->
+            <div id="agriculture" class="career-category mb-16">
+                <div class="flex items-center mb-6 p-4 bg-lime-50 rounded-lg border-l-4 border-lime-500">
+                    <i class="fas fa-tractor text-2xl text-lime-500 mr-4"></i>
+                    <h2 class="text-3xl font-bold">Agriculture & Food Technology</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="resource-card" style="border-left-color: #84cc16;">
+                        <h3 class="font-bold text-lg mb-2">Modern Agriculture Careers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Farming, food technology, and agribusiness. Explore sustainable agriculture and food innovation.</p>
+                        <a href="https://drive.google.com/uc?export=download&id=AGRICULTURE_PDF_ID" 
+                           class="download-btn" style="background: #84cc16;">
+                            <i class="fas fa-download mr-1"></i>Download Workbook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 RETEC Digital Library. Free educational resources for Ghanaian students.</p>
+        </div>
+    </footer>
+</body>
+</html>
